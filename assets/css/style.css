@@ -1,0 +1,50 @@
+body {
+    background-color: #fff;
+}
+
+.game-board {
+background-color: #000;
+position: absolute;
+height: 600px;
+width: 600px;
+}
+
+.quadrant {
+    border-style: solid;
+    border-color:#eee;
+    display: inline-block;
+    height: 300px;
+    width: 300px;
+    float: left;
+}
+
+.green {
+    border-radius: 100% 0 0 0;
+    border-width: 4px 2px 2px 4px;
+    background-color: #008000;
+}
+.red {
+    border-radius: 0 100% 0 0;
+    border-width: 4px 2px 2px 4px;
+    background-color: #ff0000;
+}
+.yellow {
+    border-radius: 0 0 0 100%;
+    border-width: 4px 2px 2px 4px;
+    background-color: #ffff00;
+}
+.blue {
+    border-radius: 0 0 100% 0;
+    border-width: 4px 2px 2px 4px;
+    background-color: #0000ff;
+}
+
+.inner-circle {
+    height: 300px;
+    width: 300px;
+    background-color: #f5f5f5;
+    border-radius: 50%;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+}
