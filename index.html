@@ -1,35 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Simon Game</title>
 </head>
+
 <body>
-<div class="container">
-    <div class="row">
-        <div class="game-board">
-            <div class="green quadrant"></div>
-            <div class="red quadrant"></div>
-            <div class="yellow quadrant"></div>
-            <div class="blue quadrant"></div>
-            <div class="inner-circle">
-                
+    <div class="container">
+        <div class="row">
+            <div class="game-board">
+                <div class="green quadrant"></div>
+                <div class="red quadrant"></div>
+                <div class="yellow quadrant"></div>
+                <div class="blue quadrant"></div>
+                <div class="inner-circle">
+                    <h1 class="title">Simon</h1>
+                    <div class="row justify-content-center">
+
+                        <input type="checkbox" id="switch" />
+                        <label for="switch"></label>
+                       </div>
+                    <div class="row justify-content-center">
+                        <div class="col text-center">
+                            <button type="button" class="strict" id="strict"></button>
+                            <h5>Strict</h5>
+                        </div>
+                        <div class="col text-center">
+                            <button type="button" class="start" id="start"></button>
+                            <h5>Start</h5>
+                        </div>
+
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="counter">--</div>
+                    </div>
+                </div>
             </div>
+
         </div>
+    </div>
+
+    <div class="container">
+
 
     </div>
-</div>
-
-<div class="container">
 
 
-</div>
 
-
-    
 </body>
+
 </html>

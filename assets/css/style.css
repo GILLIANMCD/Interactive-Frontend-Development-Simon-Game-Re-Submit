@@ -1,12 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Bevan|Roboto&display=swap');
 body {
     background-color: #fff;
 }
+.title {
+    font-family: 'Bevan', cursive;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 1em;
+}
 
 .game-board {
-background-color: #000;
-position: absolute;
-height: 600px;
-width: 600px;
+    background-color: #000;
+    position: absolute;
+    height: 600px;
+    width: 600px;
 }
 
 .quadrant {
@@ -48,3 +55,71 @@ width: 600px;
     top: 25%;
     left: 25%;
 }
+
+.top {
+    text-align: center;
+}
+/*on/off switch https://www.youtube.com/watch?v=Atc0qPkDeKM&t=28s*/
+input[type=checkbox]{
+    height: 0;
+    width: 0;
+    visibility: hidden;
+  }
+  label {
+    background: #dddddd;
+    text-indent: -9999px;
+    width: 80px;
+    height: 40px;
+    display: block;
+    border-radius: 50px;
+    position: relative;
+    
+    }
+  label:after {
+    content: '';
+    position: absolute;
+    top: 2.5px;
+    left: 2.5px;
+    width: 35px;
+    height: 35px;
+    background: #fff;
+    border-radius: 45px;
+    transition: 0.3s;
+  
+    }
+  input:checked + label {
+        background: #6edc5f;
+   
+  }
+  
+  input:checked + label:after {
+    left: calc(100% - 2.5px);
+    transform: translateX(-100%);
+   
+  }
+  /* end on/off switch*/
+  #strict {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: red;
+
+  }
+  #start {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: lightgreen;
+
+  }
+  .counter {
+    margin-top: 1em;
+    border: 2px solid;
+    background: #330000;
+    color: red;
+    font-family: courier;
+    font-size: 30px;
+    height: 40px;
+    width: 80px;
+    text-align: center;
+  }
