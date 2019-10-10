@@ -109,7 +109,7 @@ input[type=checkbox]{
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: red;
+    background-color: #dddddd;
 
   }
   #start {
@@ -205,8 +205,6 @@ input[type=checkbox]{
     #strict {
       width: 20px;
       height: 20px;
-      border-radius: 50%;
-      background-color: red;
     
     }
     #start {
