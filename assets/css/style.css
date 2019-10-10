@@ -123,3 +123,104 @@ input[type=checkbox]{
     width: 80px;
     text-align: center;
   }
+
+  @media (max-width:770px){
+    h5{
+      font-size: 0.7em;
+      text-transform: uppercase;
+    }
+
+    .title {
+      font-family: 'Bevan', cursive;
+      text-transform: uppercase;
+      text-align: center;
+      margin-top: 1em;
+      font-size: 1em;
+  }
+  
+  .game-board {
+      background-color: #000;
+      position: absolute;
+      height: 300px;
+      width: 300px;
+    }
+  
+  .quadrant {
+      border-style: solid;
+      border-color:#eee;
+      display: inline-block;
+      height: 150px;
+      width: 150px;
+      float: left;
+  }
+  
+  .inner-circle {
+      height: 150px;
+      width: 150px;
+      background-color: #f5f5f5;
+      border-radius: 50%;
+      position: absolute;
+      top: 25%;
+      left: 25%;
+  }
+  
+  .top {
+      text-align: center;
+  }
+  /*on/off switch https://www.youtube.com/watch?v=Atc0qPkDeKM&t=28s*/
+  input[type=checkbox]{
+      height: 0;
+      width: 0;
+      visibility: hidden;
+    }
+    label {
+      background: #dddddd;
+      text-indent: -9999px;
+      width: 40px;
+      height: 20px;
+      display: block;
+      border-radius: 25px;
+      position: relative;
+      
+      }
+    label:after {
+      content: '';
+      position: absolute;
+      top: 1.25px;
+      left: 1.25px;
+      width: 17.5px;
+      height: 17.5px;
+      background: #fff;
+      border-radius: 22.5px;
+      transition: 0.3s;
+    
+      }
+    /* end on/off switch*/
+    #strict {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: red;
+    
+    }
+    #start {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: lightgreen;
+  
+    }
+    .counter {
+      margin-top: 0.5em;
+      border: 2px solid #dddddd;
+      background: #330000;
+      color: red;
+      font-family: courier;
+      font-size: 0.7em;
+      height: 20px;
+      width: 40px;
+      text-align: center;
+    }
+  }
+
+  
