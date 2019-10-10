@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Bevan|Roboto&display=swap');
 body {
-    background-color: #fff;
+  background-image:url(../img/mosaic.png);
+}
+.container {
+  padding-top: 50px;
 }
 .title {
     font-family: 'Bevan', cursive;
@@ -10,7 +13,6 @@ body {
 }
 
 .game-board {
-    background-color: #000;
     position: absolute;
     height: 600px;
     width: 600px;
@@ -113,8 +115,8 @@ input[type=checkbox]{
 
   }
   .counter {
-    margin-top: 1em;
-    border: 2px solid;
+    margin-top: 0.5em;
+    border: 2px solid #dddddd;
     background: #330000;
     color: red;
     font-family: courier;
@@ -124,7 +126,7 @@ input[type=checkbox]{
     text-align: center;
   }
 
-  @media (max-width:770px){
+  @media (max-width:375px){
     h5{
       font-size: 0.7em;
       text-transform: uppercase;
@@ -139,7 +141,6 @@ input[type=checkbox]{
   }
   
   .game-board {
-      background-color: #000;
       position: absolute;
       height: 300px;
       width: 300px;
