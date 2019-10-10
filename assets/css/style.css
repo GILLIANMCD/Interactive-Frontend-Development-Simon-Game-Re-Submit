@@ -12,6 +12,11 @@ body {
     margin-top: 1em;
 }
 
+.align-middle {
+  padding-top: 0.25em;
+  text-transform: uppercase;
+}
+
 .game-board {
     position: absolute;
     height: 600px;
@@ -212,7 +217,7 @@ input[type=checkbox]{
   
     }
     .counter {
-      margin-top: 0.5em;
+      margin-top: 0.25em;
       border: 2px solid #dddddd;
       background: #330000;
       color: red;
