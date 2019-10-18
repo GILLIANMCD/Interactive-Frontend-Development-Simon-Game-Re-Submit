@@ -35,37 +35,22 @@ onOffButton.addEventListener("click", () => {
     }
 });
 
-//Strict Button resets the game if player has incorrect move 
-
-/*strictButton.addEventListener('click', (event) => {
-    if (strictButton.checked == true){
-        strict = true;
-    } else {
-        strict = false; 
-    }
-});*/
-
 $(document).ready(function(){ //jQuery & javaScript when the DOM is ready
 
-//Turns Strict Mode ON/OFF -- Does Not Turn Off ---
-$('#strict').on('click', function() {
-    $('#strict').removeClass('selected');
-    $(this).addClass('selected');
-});
-$('#strict').off('click', function() {
-    $('#strict').removeClass('selected');
-    $(this).addClass('#strict');
-});
+/*Turns Strict Mode ON/OFF*/
+$(strictButton).on('click', function() {
+    if (strict.selected = false)
 
+    $(this).addClass('selected');
+
+    else (strict = false)
+    $(this).removeClass('selected')
+    });
+
+ 
 $('#start').on('click', function() {
     $('#start').removeClass('selected');
     $(this).addClass('selected');
 });
 
 });
-
-
-
-
-
-    

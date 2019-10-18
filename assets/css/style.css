@@ -179,7 +179,7 @@ input[type=checkbox]{
       text-align: center;
   }
   /*on/off switch https://www.youtube.com/watch?v=Atc0qPkDeKM&t=28s*/
-  input[type=checkbox]{
+  input.[type=checkbox]{
       height: 0;
       width: 0;
       visibility: hidden;
