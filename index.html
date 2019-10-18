@@ -8,17 +8,35 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <audio id="green">
+            <source src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3">
+            </source>
+          </audio>
+          <audio id="red">
+            <source src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3">
+            </source>
+          </audio>
+          <audio id="yellow">
+            <source src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3">
+            </source>
+          </audio>
+          <audio id="blue">
+            <source src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3">
+            </source>
+          </audio>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>Simon Game</title>
 </head>
 
 <body>
-    <div class="container">
+    <div id="container">
+        <div class="col">
         <div class="row justify-content-center">
             <div class="game-board">
-                <div class="green quadrant"></div>
-                <div class="red quadrant"></div>
-                <div class="yellow quadrant"></div>
-                <div class="blue quadrant"></div>
+                <div id="green" class="quadrant"></div>
+                <div id="red" class="quadrant"></div>
+                <div id="yellow" class="quadrant"></div>
+                <div id="blue" class="quadrant"></div>
                 <div class="inner-circle">
                     <h1 class="title">Simon</h1>
                     <div class="row justify-content-center align-middle">
@@ -29,11 +47,11 @@
                        </div>
                     <div class="row justify-content-center">
                         <div class="col text-center">
-                            <button type="button" class="strict" id="strict"></button>
+                            <button class="strict" id="strict"></button>
                             <h5>Strict</h5>
                         </div>
                         <div class="col text-center">
-                            <button type="button" class="start" id="start"></button>
+                            <button class="start" id="start"></button>
                             <h5>Start</h5>
                         </div>
 
@@ -46,11 +64,10 @@
 
         </div>
     </div>
-
-    <div class="container">
-
-
     </div>
+
+
+
 
 
     <script src="assets/js/index.js"></script>

@@ -32,22 +32,22 @@ body {
     float: left;
 }
 
-.green {
+#green {
     border-radius: 100% 0 0 0;
     border-width: 4px 2px 2px 4px;
     background-color: #008000;
 }
-.red {
+#red {
     border-radius: 0 100% 0 0;
     border-width: 4px 2px 2px 4px;
     background-color: #ff0000;
 }
-.yellow {
+#yellow {
     border-radius: 0 0 0 100%;
     border-width: 4px 2px 2px 4px;
     background-color: #ffff00;
 }
-.blue {
+#blue {
     border-radius: 0 0 100% 0;
     border-width: 4px 2px 2px 4px;
     background-color: #0000ff;
@@ -70,7 +70,6 @@ body {
 input[type=checkbox]{
     height: 0;
     width: 0;
-    visibility: hidden;
   }
   label {
     background: #dddddd;
@@ -109,15 +108,21 @@ input[type=checkbox]{
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #dddddd;
+    background-color: #fff;
+   }
+   #strict.selected {
+     background-color: red;
+   }
 
-  }
   #start {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: lightgreen;
+    background-color: #fff;
 
+  }
+  #start.selected {
+    background-color: #6edc5f;
   }
   .counter {
     margin-top: 0.5em;
