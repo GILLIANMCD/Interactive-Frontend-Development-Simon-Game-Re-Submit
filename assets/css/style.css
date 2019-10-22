@@ -37,20 +37,32 @@ body {
     border-width: 4px 2px 2px 4px;
     background-color: #008000;
 }
+.green-active {
+    background-color: #90ee90;
+}
 #red {
     border-radius: 0 100% 0 0;
     border-width: 4px 2px 2px 4px;
     background-color: #ff0000;
+}
+.red-active {
+    background-color: #ff6347;
 }
 #yellow {
     border-radius: 0 0 0 100%;
     border-width: 4px 2px 2px 4px;
     background-color: #ffff00;
 }
+.yellow-active {
+    background-color: #f8f7d9;
+}
 #blue {
     border-radius: 0 0 100% 0;
     border-width: 4px 2px 2px 4px;
     background-color: #0000ff;
+}
+.yellow-active {
+  background-color: #87ceeb;
 }
 
 .inner-circle {
