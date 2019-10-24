@@ -32,7 +32,7 @@ body {
     float: left;
 }
 
-#green {
+.green {
     border-radius: 100% 0 0 0;
     border-width: 4px 2px 2px 4px;
     background-color: #008000;
@@ -40,7 +40,7 @@ body {
 .green-active {
     background-color: #90ee90;
 }
-#red {
+.red {
     border-radius: 0 100% 0 0;
     border-width: 4px 2px 2px 4px;
     background-color: #ff0000;
@@ -48,7 +48,7 @@ body {
 .red-active {
     background-color: #ff6347;
 }
-#yellow {
+.yellow {
     border-radius: 0 0 0 100%;
     border-width: 4px 2px 2px 4px;
     background-color: #ffff00;
@@ -56,12 +56,12 @@ body {
 .yellow-active {
     background-color: #f8f7d9;
 }
-#blue {
+.blue {
     border-radius: 0 0 100% 0;
     border-width: 4px 2px 2px 4px;
     background-color: #0000ff;
 }
-.yellow-active {
+.blue-active {
   background-color: #87ceeb;
 }
 

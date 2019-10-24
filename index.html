@@ -8,53 +8,56 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
+
     <title>Simon Game</title>
 </head>
 
 <body>
-    <div id="container">
-        <div class="col">
-        <div class="row justify-content-center">
-            <div class="game-board">
-                <div id="green" class="quadrant"></div>
-                <div id="red" class="quadrant"></div>
-                <div id="yellow" class="quadrant"></div>
-                <div id="blue" class="quadrant"></div>
-                <div class="inner-circle">
-                    <h1 class="title">Simon</h1>
-                    <div class="row justify-content-center align-middle">
-                        <h5 class="align-middle">Off</h5>
-                        <input type="checkbox" id="switch" />
-                        <label for="switch"></label>
-                        <h5 class="align-middle">On</h5>
-                       </div>
-                    <div class="row justify-content-center">
-                        <div class="col text-center">
-                            <input type="checkbox" id="strict"/>
-                            <h5>Strict</h5>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="game-board">
+                    <div id="green" class="green quadrant"></div>
+                    <div id="red" class="red quadrant"></div>
+                    <div id="yellow" class="yellow quadrant"></div>
+                    <div id="blue" class="blue quadrant"></div>
+                    <div class="inner-circle">
+                        <h1 class="title">Simon</h1>
+                        <div class="row justify-content-center align-middle">
+                            <h5 class="align-middle">Off</h5>
+                            <input type="checkbox" id="switch" />
+                            <label for="switch"></label>
+                            <h5 class="align-middle">On</h5>
                         </div>
-                        <div class="col text-center">
-                            <input type="checkbox" id="start">
-                            <h5>Start</h5>
-                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col text-center">
+                                <input type="checkbox" id="strict" />
+                                <h5>Strict</h5>
+                            </div>
+                            <div class="col text-center">
+                                <input type="checkbox" id="start">
+                                <h5>Start</h5>
+                            </div>
 
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="counter" id="score"></div>
+                        </div>
                     </div>
-                    <div class="row justify-content-center">
-                        <div class="counter" id="score"></div>
-                    </div>
+                </div>
+            </div>
+                <div class="col">
+                    <button type="button" class="btn btn-light btn-lg btn-block">Simon Game Instructions</button>
                 </div>
             </div>
 
         </div>
-    </div>
-    </div>
 
 
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="assets/js/index.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="assets/js/index.js"></script>
 </body>
 
 </html>
