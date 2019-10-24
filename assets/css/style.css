@@ -2,6 +2,15 @@
 body {
   background-image:url(../img/mosaic.png);
 }
+p {
+  color: #f5f5f5;
+}
+ol {
+  color: #fff;
+}
+.inst {
+  background-color: #ff0000;
+}
 .container {
   padding-top: 50px;
 }
