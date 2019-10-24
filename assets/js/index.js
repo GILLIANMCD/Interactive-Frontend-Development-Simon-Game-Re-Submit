@@ -251,4 +251,8 @@ function check() {
     on = false;
     win = true;
   }
+
+  $("#button").click(function(){
+    $('#hide').slideToggle('slow');
+});
   
