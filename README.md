@@ -4,15 +4,15 @@ Simon (game) Simon is an electronic game of memory skill invented by Ralph H. Ba
  
 ## UX
  
-Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
+The purpose of this website is to create a challenging experience for all ages.
 
-In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
+## User Stories
 - As a user I want to be presented with a random series of button presses.  
 - As a user I want to be able to choose level of difficulty to play the game. 
 - As a user I want to get feedback if I have lost/won the game. 
 - As a user I want to be able to hide the instructions if I wish. 
 
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
+- Wireframe created using Balsamiq - saved in Assets Folder
 
 ## Features
 
@@ -62,7 +62,7 @@ If this section grows too long, you may want to split it off into a separate fil
 This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
 
 In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
-- Different values for environment variables (Heroku Config Vars)?
+- Github [Simon Game](https://gillianmcdonnell.github.io/Interactive-Frontend-Development-Simon-Game-Re-Submit/) 
 - Different configuration files?
 - Separate git branch?
 
@@ -74,9 +74,8 @@ In addition, if it is not obvious, you should also describe how to run your code
 ### Content
 - The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
 
-### Media
-- The photos used in this site were obtained from ...
+
 
 ### Acknowledgements
 
-- I received inspiration for this project from X
+- I received inspiration from this project from [FreeCodeCamp](https://www.youtube.com/watch?v=n_ec3eowFLQ&t=3309s) 
