@@ -88,6 +88,7 @@ function play() {
 function randomMoves () {
     for (var i = 0; i < 20; i++) {
         order.push(Math.floor(Math.random() * 4) + 1);
+        console.log(order)
       }
 }
 

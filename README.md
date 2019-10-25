@@ -9,6 +9,7 @@ The purpose of this website is to create a challenging experience for all ages.
 ## User Stories
 - As a user I want to be presented with a random series of button presses.  
 - As a user I want to be able to choose level of difficulty to play the game. 
+- As a user I want to see what level I have reached on the game. 
 - As a user I want to get feedback if I have lost/won the game. 
 - As a user I want to be able to hide the instructions if I wish. 
 
@@ -16,66 +17,68 @@ The purpose of this website is to create a challenging experience for all ages.
 
 ## Features
 
-In this section, you should go over the different parts of your project, and describe each in a sentence or so.
+**************************************************************************************
  
 ### Existing Features
-- Feature 1 - allows users X to achieve Y, by having them fill out Z
-- ...
-
-For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
-
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
+- 20 Level Game 
+- Normal or Strict Mode 
+    - When in Normal mode if incorrect move is made the player has to redo previous level. 
+    - When in Strict mode if incorrect move is made player has to start the game from the beginning.
+- The user cannot click the coloured pads befor the game starts or during the computers turn.
+- The user can view or hide game instructions for a better user experience. 
 
 ### Features Left to Implement
-- Another feature idea
+- Add different levels of difficulty as in Original game with 4 levels of difficulty with increasing speed of flasing lights and increase number of levels. 
+- Add new sound when player wins or loses the game. 
+- Add a feature such as fireworks when player wins the game. 
 
 ## Technologies Used
 
-In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
-
+- [Bootstrap 4](https://getbootstrap.com/)
+    - Responsive Grid with Flexbox and Styling
+- Javascript
+    - 
 - [JQuery](https://jquery.com)
-    - The project uses **JQuery** to simplify DOM manipulation.
+    - To simplify DOM manipulation.
+- [Jasmine](https://cdnjs.com/libraries/jasmine)
+    - JavaScript testing Framework 
 
 
 ## Testing
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
+Testing was complete through Google developer tools. Ensuring that columns and rows were displayed correctly on implementation and changing css as needed to ensure UX Design was as close to wireframe as possible. After instructions were added there was an overlap problem with the gameboard so to combat this problem the easiest solution was to move instructions to the top of the page and introduce a show/hide function through jQuery slideToggle so as not to impact the users ability to play on smaller devices. 
 
-Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
+On testing the game in FireFox there is errors with the checkboxes as they are not styled as in Google Chrome and Safari.
 
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
+JavaScript and Jquery tests through console log
+ - On/Off - on = true off = false
+ - Strict - on = strictTrue off = strictFalse 
+ - Start - on = startTrue off = startFalse
+ - Random Number Generator = Console Log Order - generates numbers between 1 and 4 and increments 1 untill it reaches 20 which is the number of levels to Win
 
-1. Contact form:
-    1. Go to the "Contact Us" page
-    2. Try to submit the empty form and verify that an error message about the required fields appears
-    3. Try to submit the form with an invalid email address and verify that a relevant error message appears
-    4. Try to submit the form with all inputs valid and verify that a success message appears.
+I have attempted to include Jasmine testing in this project, as I do not fully understand how to test I have left the basic setup to be completed at a further date. 
 
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
 
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
 
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
 
 ## Deployment
 
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
-
-In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
+This project was created through Visual Studio Code and pushed to Github with [Desktop Github](https://desktop.github.com/) then deployed to both github and heroku.
 - Github [Simon Game](https://gillianmcdonnell.github.io/Interactive-Frontend-Development-Simon-Game-Re-Submit/) 
-- Different configuration files?
-- Separate git branch?
-
-In addition, if it is not obvious, you should also describe how to run your code locally.
+- Heroku [Gillians Simon Game](https://gillians-simon-game.herokuapp.com)
 
 
 ## Credits
+- [FreeCodeCamp](https://www.youtube.com/watch?v=n_ec3eowFLQ&t=3309s) any elements of javascript copied are noted in index.js. 
 
 ### Content
-- The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
+- Instruction content was written according to game function.
+- Design was inspired from original game and [FreeCodeCamp](https://www.youtube.com/watch?v=n_ec3eowFLQ&t=3309s) 
+- CSS Design was inspired by [Emanuele](https://codepen.io/Em-Ant/pen/QbRyqq)
 
 
 
 ### Acknowledgements
 
 - I received inspiration from this project from [FreeCodeCamp](https://www.youtube.com/watch?v=n_ec3eowFLQ&t=3309s) 
+- Deployment to heroku[deploy-static-site-to-heroku](https://gist.github.com/wh1tney/2ad13aa5fbdd83f6a489)
