@@ -15,9 +15,6 @@ The purpose of this website is to create a challenging experience for all ages.
 
 - Wireframe created using Balsamiq - saved in Assets Folder
 
-## Features
-
-**************************************************************************************
  
 ### Existing Features
 - 20 Level Game 

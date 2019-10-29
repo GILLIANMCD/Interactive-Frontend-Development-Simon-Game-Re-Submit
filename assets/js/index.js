@@ -22,10 +22,10 @@ const onOffButton = document.getElementById("switch");
 const strictButton = document.getElementById("strict");
 const startButton = document.getElementById("start");
 const score = document.getElementById("score");
-const greenQuad = document.getElementsByClassName("green");
-const redQuad = document.getElementsByClassName("red");
-const blueQuad = document.getElementsByClassName("blue");
-const yellowQuad = document.getElementsByClassName("yellow");
+const green = $("#green");
+const red = $("#red");
+const yellow = $("#yellow");
+const blue = $("#blue");
 
 //Event Listeners
 
@@ -119,41 +119,41 @@ function compPlay() {
 // Play sound and activate light
 function one() {
     greenSound.play();
-    $(green).addClass("green-active");
+    green.addClass("green-active");
 }
 
 function two() {
     redSound.play();
-    $(red).addClass("red-active");
+    red.addClass("red-active");
 }
 
 function three() {
     yellowSound.play();
-    $(yellow).addClass("yellow-active");
+    yellow.addClass("yellow-active");
 }
 
 function four() {
     blueSound.play();
-    $(blue).addClass("blue-active");
+    blue.addClass("blue-active");
 }
 
 // Active and inActive Colors 
 function clearColor() {
-    $(green).removeClass("green-active");
-    $(red).removeClass("red-active");
-    $(yellow).removeClass("yellow-active");
-    $(blue).removeClass("blue-active");
+    green.removeClass("green-active");
+    red.removeClass("red-active");
+    yellow.removeClass("yellow-active");
+    blue.removeClass("blue-active");
 }
 
 function flashColor () {
-    $(green).addClass("green-active");
-    $(red).addClass("red-active");
-    $(yellow).addClass("yellow-active");
-    $(blue).addClass("blue-active");
+    green.addClass("green-active");
+    red.addClass("red-active");
+    yellow.addClass("yellow-active");
+    blue.addClass("blue-active");
 
 }
 
-$(green).on("click", function(){
+green.on("click", function(){
     if (on) {
         playerOrder.push(1);
         check();
@@ -166,7 +166,7 @@ $(green).on("click", function(){
    }
 });
 
-$(red).on("click", function(){
+red.on("click", function(){
     if (on) {
         playerOrder.push(2);
         check();
@@ -179,7 +179,7 @@ $(red).on("click", function(){
    }
 });
 
-$(yellow).on("click", function(){
+yellow.on("click", function(){
     if (on) {
         playerOrder.push(3);
         check();
@@ -192,7 +192,7 @@ $(yellow).on("click", function(){
    }
 });
 
-$(blue).on("click", function(){
+blue.on("click", function(){
     if (on) {
         playerOrder.push(4);
         check();
@@ -256,4 +256,6 @@ function check() {
   $("#button").click(function(){
     $('#hide').slideToggle('slow');
 });
+
+
   
